@@ -1,0 +1,14 @@
+.footer{
+  .subscription{
+      font-size: 24px;
+      @include desktop() {
+          font-size: 28px;
+      }
+  }
+  .footerIcon li{
+    transition: all .5s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+  }
+}

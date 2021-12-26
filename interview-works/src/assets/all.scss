@@ -1,6 +1,10 @@
 @import "~bootstrap/scss/functions";
 @import "./helpers/variables";
-@import "~bootstrap/scss/mixins";
+@import "./components/mixin";
 @import "~bootstrap/scss/root";
 
 @import "~bootstrap/scss/bootstrap";
+
+@import "./helpers/base";
+@import "./front/index";
+@import "./front/footer";

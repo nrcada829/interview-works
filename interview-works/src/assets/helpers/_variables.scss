@@ -79,14 +79,14 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    #00cc99,
-  "secondary":  $secondary,
+  "primary":    #253140,
+  "secondary":  #EFEFEF,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger,
+  "danger":     #AA0601,
   "light":      $light,
-  "dark":       $dark
+  "dark":       #253140
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -375,11 +375,18 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .125,  //$spacer * .25
+  2: $spacer * .25,   //$spacer * .5
+  3: $spacer * .5,    //$spacer
+  4: $spacer * .625,  //$spacer * 1.5
+  5: $spacer,         //$spacer * 3
+  6: $spacer * 1.25,
+  7: $spacer * 1.5,
+  8: $spacer * 1.875,
+  9: $spacer * 2,
+  10:$spacer * 2.5,
+  11:$spacer * 3,
+  12:$spacer * 4,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -442,8 +449,8 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-color:                              white !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
