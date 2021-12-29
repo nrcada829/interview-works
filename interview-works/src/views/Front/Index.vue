@@ -1,5 +1,4 @@
 <template>
-  <Navbar></Navbar>
   <!-- banner -->
   <section class="banner mb-9 mb-md-10">
     <div class="container h-100">
@@ -295,35 +294,27 @@
   <section class="afterSalesService bg-secondary py-10">
     <ul class="row justify-content-between list-unstyled text-center">
       <li class="col-md-4 mb-6 mb-md-0">
-        <img src="../assets/img/pack.png" class="mb-4" alt="pack" />
+        <img src="@/assets/img/pack.png" class="mb-4" alt="pack" />
         <h6 class="fw-bold fs-4">全台免運</h6>
         <p>全店商品，一率免運</p>
       </li>
       <li class="col-md-4 mb-6 mb-md-0">
-        <img src="../assets/img/warranty.png" class="mb-4" alt="warranty" />
+        <img src="@/assets/img/warranty.png" class="mb-4" alt="warranty" />
         <h6 class="fw-bold fs-4">一年保固</h6>
         <p>全系列商品，非人為因素損壞免費維修</p>
       </li>
       <li class="col-md-4 mb-6 mb-md-0">
-        <img src="../assets/img/mail.png" class="mb-4" alt="mail" />
+        <img src="@/assets/img/mail.png" class="mb-4" alt="mail" />
         <h6 class="fw-bold fs-4">顧客服務</h6>
         <p>有任何問題皆可與我們客服聯絡</p>
       </li>
     </ul>
   </section>
-  <router-view></router-view>
-  <Footer></Footer>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
-import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'Index',
-  components: {
-    Navbar,
-    Footer,
-  },
 };
 </script>

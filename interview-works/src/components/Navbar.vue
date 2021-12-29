@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="#">首頁</a>
-          <a class="nav-link" href="#">產品介紹</a>
+          <router-link to="products" class="nav-link">產品介紹</router-link>
           <a class="nav-link" href="#">關於我們</a>
           <a class="nav-link" href="#">聯絡我們</a>
         </div>
